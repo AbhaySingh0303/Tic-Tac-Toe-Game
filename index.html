@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic-Tac-Toe Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
 </head>
 <body>
-    <div id="msg-container" class="msg-container hide"> <!-- Added 'id' for consistency -->
+    <div id="msg-container" class="msg-container hide">
         <p id="msg">Winner</p>
         <button id="new-btn">New Game</button>
     </div>
     <main>
         <h1>TIC-TAC-TOE</h1>
+        <p id="turn-indicator" class="turn-indicator">Player <span id="current-player">O</span>'s Turn</p>
         <div class="container">
             <div class="game">
-                <!-- Ensuring all buttons have consistent 'box' class -->
                 <button class="box"></button>
                 <button class="box"></button>
                 <button class="box"></button>
@@ -28,7 +31,7 @@
                 <button class="box"></button>
             </div>
         </div>
-        <button id="reset-button">Reset Game</button> <!-- Button for resetting -->
+        <button id="reset-button">Reset Game</button>
     </main>
 </body>
 </html>
